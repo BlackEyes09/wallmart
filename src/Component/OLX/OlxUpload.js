@@ -19,14 +19,14 @@ const OlxUpload = () => {
                 <h2>Product Details</h2>
                 <form onSubmit={handleSubmit}>
                     <div className="image-container">
-                    <label htmlFor="name">Image:</label>
+                        <label htmlFor="name">Image:</label>
                         <input
-                            type="file"
+                            type="file" className="choose"
                             required
                         />
-                        <br/>
+                        <br />
                     </div>
-                    <br/>
+                    <br />
                     <div className="input-container">
                         <label htmlFor="name">Name:</label>
                         <input
@@ -60,13 +60,13 @@ const OlxUpload = () => {
                     </button>
                 </form>
                 {showSuccessModal && (
-                <div className="modal">
-                    <div className="modal-content">
-                        <p>Uploaded successfully!</p>
-                        <button onClick={() => setShowSuccessModal(false)}>Close</button>
+                    <div className="modal">
+                        <div className="modal-content">
+                            <p>Uploaded successfully!</p>
+                            <button onClick={() => setShowSuccessModal(false)}>Close</button>
+                        </div>
                     </div>
-                </div>
-            )}
+                )}
             </div>
         </div>
     )

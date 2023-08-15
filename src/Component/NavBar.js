@@ -9,7 +9,7 @@ const NavBar = () => {
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
-        backgroundColor: '#333',
+        backgroundColor: '#0071ce',
         color: 'white',
         padding: '10px 20px',
         position: 'fixed',
